@@ -11,60 +11,60 @@ import { Animal } from './animal.model';
         </div>
         <div class="panel-body">
           <div class="form-group">
-            <label class="control-label col-sm-2">Enter Animal Species:</label>
-            <div class="col-sm-10">
+            <label class="control-label col-sm-2">Enter Species:</label>
+            <div class="col-sm-4">
               <input class="form-control" [(ngModel)]="childSelectedAnimal.species">
-            </div>
+              </div>
           </div>
           <div class="form-group">
-            <label class="control-label col-sm-2">Enter Animal Name:</label>
-            <div class="col-sm-10">
+            <label class="control-label col-sm-2">Enter Name:</label>
+            <div class="col-sm-4">
               <input  class="form-control" [(ngModel)]="childSelectedAnimal.name">
             </div>
           </div>
           <div class="form-group">
-            <label class="control-label col-sm-2">Enter Animal Age:</label>
-            <div class="col-sm-10">
+            <label class="control-label col-sm-2">Enter Age:</label>
+            <div class="col-sm-4">
               <input  class="form-control" [(ngModel)]="childSelectedAnimal.age">
             </div>
           </div>
           <div class="form-group">
-            <label class="control-label col-sm-2">Enter Animal Diet:</label>
+            <label class="control-label col-sm-2">Enter Diet:</label>
             <div class="col-sm-4">
               <input  class="form-control" [(ngModel)]="childSelectedAnimal.diet">
             </div>
           </div>
           <div class="form-group">
-            <label class="control-label col-sm-2">Enter Animal Location:</label>
+            <label class="control-label col-sm-2">Enter Location:</label>
             <div class="col-sm-4">
               <input  class="form-control" [(ngModel)]="childSelectedAnimal.location">
             </div>
           </div>
           <div class="form-group">
-            <label class="control-label col-sm-2">Enter Animal Caretakers:</label>
+            <label class="control-label col-sm-2">Enter Caretakers:</label>
             <div class="col-sm-4">
               <input  class="form-control" [(ngModel)]="childSelectedAnimal.caretakers">
             </div>
           </div>
           <div class="form-group">
-            <label class="control-label col-sm-2">Enter Animal Sex:</label>
+            <label class="control-label col-sm-2">Enter Sex:</label>
             <div class="col-sm-4">
               <input  class="form-control" [(ngModel)]="childSelectedAnimal.sex">
             </div>
           </div>
           <div class="form-group">
-            <label class="control-label col-sm-2">Enter Animal Likes:</label>
+            <label class="control-label col-sm-2">Enter Likes:</label>
             <div class="col-sm-4">
               <input  class="form-control" [(ngModel)]="childSelectedAnimal.likes">
             </div>
           </div>
           <div class="form-group">
-            <label class="control-label col-sm-2">Enter Animal Dislikes:</label>
+            <label class="control-label col-sm-2">Enter Dislikes:</label>
             <div class="col-sm-4">
               <input  class="form-control" [(ngModel)]="childSelectedAnimal.dislikes">
             </div>
           </div>
-          <div class="col-sm-offset-2 col-sm-10">
+          <div class="col-sm-offset-2 col-sm-2">
             <button class="btn btn-danger" (click) = "doneButtonClicked()">Done</button>
           </div>
         </div>
