@@ -10,7 +10,6 @@ body {
   background-color: $bg-color;
 }
 
-
 button {
   background-color: pink;
 }
@@ -30,8 +29,7 @@ img
 }
 
 select {
-
    -moz-appearance: none;
-   appearance: none;       /* remove default arrow */
-   background-color: #D8F7A6;   /* add custom arrow */
+   appearance: none;
+   background-color: #D8F7A6;
 }

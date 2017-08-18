@@ -16,6 +16,7 @@ import { Animal } from './animal.model';
       <div class="card-block">
         <h4 class="card-title">{{currentAnimal.name}}</h4>
         <button (click)="editButtonHasBeenClicked(currentAnimal)">Edit!</button>
+        <p>(Scroll down to look at the edit form!)</p>
       </div>
       <ul class="list-group list-group-flush">
         <li class="list-group-item"><strong>Species:</strong> {{currentAnimal.species}}</li>

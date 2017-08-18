@@ -5,9 +5,9 @@ import { Animal } from './animal.model';
   selector: 'edit-animal',
   template: `
     <div *ngIf="childSelectedAnimal">
-      <div class="panel panel-warning">
+      <div class="panel panel-success">
         <div class="panel-heading">
-          <h4>Edit Animal -- {{childSelectedAnimal.name}}</h4>
+          <h4>Hello! You are here to edit {{childSelectedAnimal.name}}'s Bio-data!</h4>
         </div>
         <div class="panel-body">
           <div class="form-group">
