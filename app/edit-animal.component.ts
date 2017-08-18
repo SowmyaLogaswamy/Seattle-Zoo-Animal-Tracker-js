@@ -10,12 +10,12 @@ import { Animal } from './animal.model';
           <h4>Edit Animal -- {{childSelectedAnimal.name}}</h4>
         </div>
         <div class="panel-body">
-        <div class="form-group">
-          <label class="control-label col-sm-2">Enter Image URL:</label>
-          <div class="col-sm-4">
-            <input class="form-control" [(ngModel)]="childSelectedAnimal.image">
-            </div>
-        </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2">Enter Image URL:</label>
+            <div class="col-sm-4">
+              <input class="form-control" [(ngModel)]="childSelectedAnimal.image">
+              </div>
+          </div>
           <div class="form-group">
             <label class="control-label col-sm-2">Enter Species:</label>
             <div class="col-sm-4">

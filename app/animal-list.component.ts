@@ -10,7 +10,6 @@ import { Animal } from './animal.model';
     <option value="matureAnimals">Mature Animals</option>
   </select>
   <ul>
-
     <li [class]="priceColor(currentAnimal)" *ngFor="let currentAnimal of childAnimalList | age:filterByAge">
     <div class="card" style="width: 20rem;">
       <img class="card-img-top" src="{{currentAnimal.image}}" alt="Card image cap">
@@ -55,5 +54,4 @@ export class AnimalListComponent {
   onChange(optionFromMenu) {
     this.filterByAge = optionFromMenu;
   }
-
 }

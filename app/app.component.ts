@@ -5,14 +5,14 @@ import { Animal } from './animal.model';
   selector: 'app-root',
   template: `
   <div class="container">
-  <div class = "jumbotron">
-    <h1>Seattle Zoo - Animal Tracker</h1>
+    <div class = "jumbotron">
+      <h1>Seattle Zoo - Animal Tracker</h1>
+      </div>
+      <animal-list [childAnimalList]="animals" (clickSender)="editAnimal($event)"></animal-list>
+      <hr>
+      <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
+      <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
     </div>
-    <animal-list [childAnimalList]="animals" (clickSender)="editAnimal($event)"></animal-list>
-    <hr>
-    <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
-    <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
-  </div>
   `
 })
 
@@ -30,13 +30,12 @@ export class AppComponent {
   this.selectedAnimal = clickedAnimal;
   }
 
-finishedEditing() {
-  this.selectedAnimal = null;
-}
-
-addAnimal(newAnimalFromChild: Animal) {
-    this.animals.push(newAnimalFromChild);
+  finishedEditing() {
+    this.selectedAnimal = null;
   }
 
+  addAnimal(newAnimalFromChild: Animal) {
+    this.animals.push(newAnimalFromChild);
+  }
 
 }
