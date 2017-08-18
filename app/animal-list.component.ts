@@ -10,19 +10,26 @@ import { Animal } from './animal.model';
     <option value="matureAnimals">Mature Animals</option>
   </select>
   <ul>
+
     <li [class]="priceColor(currentAnimal)" *ngFor="let currentAnimal of childAnimalList | age:filterByAge">
-      <ul>
-        <li><strong>Species:</strong> {{currentAnimal.species}}</li>
-        <li><strong>Name:</strong> {{currentAnimal.name}}</li>
-        <li><strong>Age:</strong> {{currentAnimal.age}}</li>
-        <li><strong>Diet:</strong> {{currentAnimal.diet}}</li>
-        <li><strong>Location:</strong> {{currentAnimal.location}}</li>
-        <li><strong>Caretakers:</strong> {{currentAnimal.caretakers}}</li>
-        <li><strong>Sex:</strong> {{currentAnimal.sex}}</li>
-        <li><strong>Likes:</strong> {{currentAnimal.likes}}</li>
-        <li><strong>Dislikes:</strong> {{currentAnimal.dislikes}}</li>
+    <div class="card" style="width: 20rem;">
+      <img class="card-img-top" src="{{currentAnimal.image}}" alt="Card image cap">
+      <div class="card-block">
+        <h4 class="card-title">{{currentAnimal.name}}</h4>
+        <button (click)="editButtonHasBeenClicked(currentAnimal)">Edit!</button>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>Species:</strong> {{currentAnimal.species}}</li>
+        <li class="list-group-item"><strong>Name:</strong> {{currentAnimal.name}}</li>
+        <li class="list-group-item"><strong>Age:</strong> {{currentAnimal.age}}</li>
+        <li class="list-group-item"><strong>Diet:</strong> {{currentAnimal.diet}}</li>
+        <li class="list-group-item"><strong>Location:</strong> {{currentAnimal.location}}</li>
+        <li class="list-group-item"><strong>Caretakers:</strong> {{currentAnimal.caretakers}}</li>
+        <li class="list-group-item"><strong>Sex:</strong> {{currentAnimal.sex}}</li>
+        <li class="list-group-item"><strong>Likes:</strong> {{currentAnimal.likes}}</li>
+        <li class="list-group-item"><strong>Dislikes:</strong> {{currentAnimal.dislikes}}</li>
       </ul>
-      <button (click)="editButtonHasBeenClicked(currentAnimal)">Edit!</button>
+    </div>
     </li>
   </ul>
   `

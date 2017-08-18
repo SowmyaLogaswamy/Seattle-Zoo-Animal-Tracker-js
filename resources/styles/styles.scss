@@ -1,3 +1,5 @@
+$bg-color: #FAFAD2;
+
 html, body, ul, ol {
   margin: 0;
   padding: 0;
@@ -5,10 +7,20 @@ html, body, ul, ol {
 
 body {
   font: 150% Helvetica, sans-serif;
-  background-color: #e6ffe6;
+  background-color: $bg-color;
 }
 
 
 button {
-  background-color: salmon;
+  background-color: pink;
+}
+
+li {
+    list-style-type: none;
+}
+
+img
+{
+  height: 200px;
+  width: 300px;
 }
