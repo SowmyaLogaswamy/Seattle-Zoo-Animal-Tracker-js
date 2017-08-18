@@ -10,7 +10,7 @@ import { Animal } from './animal.model';
     <option value="matureAnimals">Mature Animals</option>
   </select>
   <ul>
-    <li [class]="priceColor(currentAnimal)" *ngFor="let currentAnimal of childAnimalList">
+    <li [class]="priceColor(currentAnimal)" *ngFor="let currentAnimal of childAnimalList | age:filterByAge">
       <ul>
         <li><strong>Species:</strong> {{currentAnimal.species}}</li>
         <li><strong>Name:</strong> {{currentAnimal.name}}</li>
@@ -34,7 +34,7 @@ export class AnimalListComponent {
   filterByAge: string = "allAnimals";
 
   priceColor(currentAnimal){
-    if (currentAnimal.age < 5){
+    if (currentAnimal.age < 2){
       return "bg-danger";
     } else {
       return "bg-info";
