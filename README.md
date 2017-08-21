@@ -18,6 +18,13 @@ Seattle Zoo Animal-Tracker is a application for keeping track of animals in the 
   * Spec 3: User wants to view a list of animals I have logged
   * Spec 4: User wants options to view all animals, only young animals (less than 2 years of age), or only mature animals (2 years of age and older).
   * Spec 5: User wants to click an animal to edit its name, age or caretakers.
+  
+## Future functionalities
+  * Display of the total number of caretakers needed in a day.
+  * Add a property that records when each animal was admitted. The user could enter a date and time, or the app can generate a timestamp.
+  * Expand the application to differentiate between animals' species. Group the animals into those categories. Then include a component to display the total needed caretakers for whichever species the user selects.
+  * Add a new master component to average the total age for each species.
+Show animals based on diet type. Then, show all animals who eat meat (carnivores AND omnivores)
 
 ## What's included
 Within the repository you'll find the following directories and files:
@@ -94,6 +101,6 @@ Node js
 
 ### License
 
-[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
+*MIT*
 
-To the extent possible under law, [Sowmya Devi Logaswamy](https://github.com/SowmyaLogaswamy?tab=repositories) has waived all copyright and related or neighboring rights to this work.
+Copyright (c) 2017 **_Sowmya Devi Logaswamy_**
